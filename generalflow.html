@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box{
+            height:100px;
+            width:100px;
+            margin-left:10px;
+            margin:10px 5px;
+        }
+        
+        .parent{
+            display:flex;
+            /*padding:10px;*/
+            background-color: aqua ;
+            justify-content:centre;
+            /*justify-content: space-between;*/
+        /*justify-content: space-around;*/
+        /*justify-content: space-evenly;*/
+            height:100vh;
+            align-items:center;
+
+        }
+        #child1{
+            background-color: yellow;
+            height:100px;
+            width:100px;
+        }
+        #child2{
+            background-color: green;
+            width:100px;
+            height:100px;
+        }
+        #child3{
+            background-color: red;
+            width:100px;
+            height:100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="box"></div>
+    
+    <div class="box" id="child1">one</div>
+    <div class="box" id="child2">two</div>
+    <div class="box" id="child3">three</div>
+</body>
+</html>

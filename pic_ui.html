@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .flex{
+            display: flex;
+
+        }
+        #navbar{
+            background-color: rgb(208, 207, 207);
+            height: 50px;
+            align-items: center;
+            margin-right: 0%;
+            
+        }
+        .nav-items{
+            list-style: none;
+            display: flex;
+            margin-left: 100px;
+        }
+        .justify-space-between 
+        {
+            justify-content: space-between;
+        }
+       ul li 
+       {
+       margin: 0px 10px;
+      }
+      .left-side{
+        margin-left:5%;
+      }
+      .right-side{
+        margin-left: 15%;
+        margin-right: 2%;
+      }
+      .hero-section{
+        height: 200px;
+        background-color: rgb(232, 226, 226);
+       
+      }
+      #Hireme{
+        background-color: rgb(47, 47, 246);
+        padding: 5px;
+        margin-top: 5%;
+        color: #ffffff;
+        margin-left: 0%;
+        border-radius: 10px;
+      }
+      #Download{
+        background-color: rgb(47, 47, 246);
+        padding: 5px;
+        margin-left: 10%;
+        color: #ffffff;
+        margin-left: 7%;
+        border-radius: 10px;
+      }
+      .hero-section{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .left{
+    height: 10%;
+    width: 50%;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0%;
+    margin-left: 2%;
+    
+    
+      }
+      .right{
+       height: 50%;
+       width: 50%;
+        margin-left: 55%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        border: none;
+        border-radius: 10px;
+        margin-right: 0%;
+        
+      }
+    </style>
+</head>
+<body>
+    <nav id="navbar"class="flex justify-space-between">
+        <div class="left-side">
+            CODESEED
+        </div>
+        <div class="right-side">
+            <ul class="nav-items">
+                <li>Home</li>
+                <li>About</li>
+                <li>
+                    Contact
+                </li>
+                <li>login</li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+    <div class="hero-section">
+        <div class="left">
+            <p>Hello there,I am Monika Kharmale </p>
+           <p> I am a Engineering Student</p>
+
+           <button id="Hireme">Hire me</button>
+           <button id="Download">Download Resume</button>  
+        </div>
+        <div class="right">
+            <img src="WhatsApp Image 2024-03-03 at 00.37.22_260e1466.jpg" height="250px" width="250px">
+        </div>
+        </div>
+        </section>
+</body>
+</html>

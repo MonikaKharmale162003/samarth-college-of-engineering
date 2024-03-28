@@ -1,0 +1,12 @@
+:root{
+    --nav-bg:#6f40a9;
+    --bg:#cdb7e9;
+    --lightpuple:#a57acf;
+}
+body{
+    background-color: var(--bg);
+}
+#navbar{
+    height: 10vh;
+    background-color: var(--nav-bg);
+}

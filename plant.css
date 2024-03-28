@@ -1,0 +1,31 @@
+:root{
+    --nav-bg:rgb(245, 203, 203);
+    --bg: rgb(179, 214, 202);
+    lightpuple:rgb(224, 158, 158);
+   
+
+
+
+
+.product{
+    height: 500px;
+    width: 500px;
+    background-color: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+}
+#purches{
+    background-color: aquamarine;
+    padding: 10px;
+    color: blue;
+    border: none;
+    
+}
+body{
+    background-color: rgb(214, 180, 143);
+}
+#plant-image{
+    width:50%;
+    height: 50%;
+    border-radius: 1-px;
+}
