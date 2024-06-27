@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+    <style>
+        body{
+            background-color: rgb(175, 231, 231);
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container{
+            background-color: rgb(228, 234, 143);
+            padding: 20px;
+            border-radius: 5px;
+            width: 330px;
+        }
+        form h2{
+            margin-bottom: 20px;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea{
+            border: 1px solid rgb(229, 143, 150);
+            border-radius: 3px;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button{
+            background-color: rgb(152, 57, 240);
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            color: whitesmoke;
+        }
+        button:hover{
+            background-color: rgb(131, 131, 178);
+        }
+        #responsemessage{
+            color: rgb(230, 92, 42);
+            margin-top: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form id="contactform">
+            <h2>Contact us</h2>
+            <lable for="name">Name</lable>
+            <input type="text" id="name" required>
+
+            <lable for="email">Email</lable>
+            <input type="email" id="email" required>
+
+            <lable for="message">Message</lable>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="responsemessage"></p>
+    </div>
+    <script>
+        document.getElementById('contactform').addEventListener('submit',function(event)
+    {
+        event.preventDefault();
+        //getting values
+        const name=document.getElementById('name').value;
+        const email=document.getElementById('email').value;
+        const message=document.getElementById('message').value;
+        const responsemessage=document.getElementById('responsemessage').value;
+
+        responsemessage.textcontent='thank you,${name}! your message has been received';
+
+        document.getElementById('contactform').reset();
+    });
+    </script>
+</body>
+</html>
