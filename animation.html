@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+            margin-left: 450px;
+            
+        }
+        #thediv {
+            position: relative;
+            width: 260px;
+            height: 200px;
+            background: #000000;
+            margin: 20px;
+            color: aliceblue;
+           
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        // $(function(){
+
+        // })
+
+        $(function () {
+            $("#right").click(function () {
+                $("#thediv").animate({ width: "500px" }, 1000);
+            })
+
+            $("#text").click(function () {
+                $("#thediv").animate({ fontSize:"24pt" }, 1000);
+            })
+
+            $("#move").click(function () {
+                $("#thediv").animate({ left: "500px" }, 1000);
+            })
+            $("#left").click(function () {
+                $("#thediv").animate({ right: "500px" }, 1000);
+            })
+            $("#all").click(function () {
+                $("#thediv").animate({ width: "500px" ,fontSize:"24pt",left: "500px" }, 1000);
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+    <div id="thediv">
+        <img src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg"height:180px  width="260px">hello coding 
+    </div>
+    <button id="right">extra</button>
+    <button id="text">text</button>
+    <button id="move">right move</button>
+    <button id="left">left move</button>
+    <button id="all">all</button>
+</body>
+
+</html>
